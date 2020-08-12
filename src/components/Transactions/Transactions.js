@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Transactions.module.css'
+import PropTypes from 'prop-types';
 
 const Transactions = ({items}) => {
     return (
@@ -26,5 +27,12 @@ const Transactions = ({items}) => {
 </table>
     )
 }
+
+Transactions.propTypes = {
+  id: PropTypes.string,
+  type: PropTypes.string,
+  amount: PropTypes.string,
+  currency: PropTypes.string,
+};
 
 export default Transactions

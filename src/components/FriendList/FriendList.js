@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './FriendList.module.css'
+import PropTypes from 'prop-types';
 
 const FriendList = ({friends}) => {
     return (
@@ -15,5 +16,12 @@ const FriendList = ({friends}) => {
 </ul>
     )
 }
+
+FriendList.propTypes = {
+    id: PropTypes.number,
+    isOnline: PropTypes.bool,
+    name: PropTypes.string,
+    avatar: PropTypes.string,
+  };
 
 export default FriendList

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Profile.module.css'
+import PropTypes from 'prop-types';
 
 const Profile = ({avatar, name, tag, location, stats}) => {
     return (
@@ -34,5 +35,15 @@ const Profile = ({avatar, name, tag, location, stats}) => {
 </div>
     )
 }
+
+Profile.propTypes = {
+  name: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  followers: PropTypes.number,
+  likes: PropTypes.number,
+  views: PropTypes.number,
+};
 
 export default Profile
