@@ -1,0 +1,14 @@
+.transactionHistory{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+thead{
+    background-color: rgb(168, 168, 243);
+}
+
+tr:nth-of-type(even) {
+    background-color: gainsboro;
+  }
